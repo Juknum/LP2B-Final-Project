@@ -118,3 +118,4 @@ Received Import Request.
 Start importing Assets/Scenes/BrickBreaker.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e5661365e82181d222805c70cf8120c') in 0.006752 seconds
   Import took 0.009443 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
