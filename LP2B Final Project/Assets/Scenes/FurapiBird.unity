@@ -1005,35 +1005,6 @@ Transform:
   m_Father: {fileID: 110954366}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2042489453 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2429969768791557063, guid: aa9f2bc9056a9a44a8f9bb32cba40fa3, type: 3}
-  m_PrefabInstance: {fileID: 1192094979}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2042489457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2042489453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6949c5c581179f45a9534b8a72f4dda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreValue: 0
-  score: {fileID: 0}
-  gameOver: 0
-  gameOverPanel: {fileID: 0}
-  bricksLeft: 0
-  activeScene:
-    m_Handle: 0
-  Pipe_prefab: {fileID: 2429969768791557063, guid: aa9f2bc9056a9a44a8f9bb32cba40fa3, type: 3}
-  Bird: {fileID: 0}
-  displayed_text: {fileID: 0}
-  gameOver2: 0
-  gameOverPanel2: {fileID: 0}
 --- !u!1 &2052728729
 GameObject:
   m_ObjectHideFlags: 0
