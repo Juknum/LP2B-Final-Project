@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
 
         bricksLeft = GameObject.FindGameObjectsWithTag("brick").Length;
         }
-        else if(activeScene.name == FurapiBird){
+        else if(activeScene.name == "FurapiBird"){
             InvokeRepeating("Pipe_generate", 1.0f, 2.5f);
         }
     }
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
             gameOver = true;
         gameOverPanel.SetActive(true);
         }
-        else if(activeScene.name == FurapiBird){
+        else if(activeScene.name == "FurapiBird"){
         /*Rigidbody2D refBird = GameObject.Find("Bird_01").GetComponent<Rigidbody2D>();
         refBird.velocity = new Vector2(0, 0);
         refBird.gravityScale = 0;*/
@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
         if(activeScene.name == "BrickBreaker"){
             SceneManager.LoadScene("BrickBreaker");
         }
-        else if(activeScene.name == FurapiBird){
+        else if(activeScene.name == "FurapiBird"){
             SceneManager.LoadScene("FurapiBird");
         }
     }

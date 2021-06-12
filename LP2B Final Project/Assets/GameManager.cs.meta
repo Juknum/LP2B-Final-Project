@@ -3,7 +3,13 @@ guid: c6949c5c581179f45a9534b8a72f4dda
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - score: {instanceID: 0}
+  - gameOverPanel: {instanceID: 0}
+  - Pipe_prefab: {fileID: 2429969768791557063, guid: aa9f2bc9056a9a44a8f9bb32cba40fa3, type: 3}
+  - Bird: {instanceID: 0}
+  - displayed_text: {instanceID: 0}
+  - gameOverPanel2: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

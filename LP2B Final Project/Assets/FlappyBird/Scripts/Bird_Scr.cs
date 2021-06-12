@@ -25,7 +25,7 @@ public class Bird_Scr : MonoBehaviour
     void Update()
     {
             if( transform.position.y <=5 && (Input.GetKeyDown(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow))){
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, (float)6);  
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0, (float)9);  
             }
         if(transform.position.y < -5 ){
             gameManager.GameOver();
