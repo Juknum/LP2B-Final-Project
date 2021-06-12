@@ -42,7 +42,7 @@ public class Bird_Scr : MonoBehaviour
         gameManager.score_increment();
     }
     private void sprite_alternate(){
-        if(gameManager.gameOver == false){
+        if(gameManager.gameOver2 == false){
             if(count == 0){
             spriteRenderer.sprite = second_Sprite; 
             count = 1;

@@ -17,7 +17,7 @@ public class PipeObstacle_Script : MonoBehaviour
     void Update()
     {
         
-        if(gameManager.gameOver == false){
+        if(gameManager.gameOver2 == false){
         transform.Translate( -pipeSpeed * Time.deltaTime , 0, 0 );
         }
         if (transform.position.x < despawn_posX)
