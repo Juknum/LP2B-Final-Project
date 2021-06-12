@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class GameManager : MonoBehaviour
     public bool gameOver;
     public GameObject gameOverPanel;
     public int bricksLeft;
-    scene activeScene;
+    public Scene activeScene;
 
     public GameObject Pipe_prefab;
     public GameObject Bird;
@@ -26,7 +27,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        activeScene == SceneManager.GetActiveScene();
+        activeScene = SceneManager.GetActiveScene();
         if(activeScene.name == "BrickBreaker"){
         score.text = "Score : " + scoreValue;
 
@@ -60,7 +61,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver(){
 
-        activeScene == SceneManager.GetActiveScene();
+        activeScene = SceneManager.GetActiveScene();
         if(activeScene.name == "BrickBreaker"){
             gameOver = true;
         gameOverPanel.SetActive(true);
@@ -78,7 +79,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayAgain(){
 
-        activeScene == SceneManager.GetActiveScene();
+        activeScene = SceneManager.GetActiveScene();
         if(activeScene.name == "BrickBreaker"){
             SceneManager.LoadScene("BrickBreaker");
         }
