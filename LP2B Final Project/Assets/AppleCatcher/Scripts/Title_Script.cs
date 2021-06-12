@@ -52,7 +52,7 @@ public class Title_Script : MonoBehaviour
         }
 
         //Wait a tiny bit
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(3f);
 
         //Load game scene
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("AppleCatcher");
