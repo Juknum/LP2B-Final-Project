@@ -15,11 +15,11 @@ D:/Unity/UTBM/LP2B-Final-Project/LP2B Final Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60994
+59602
 Successfully changed project path to: D:/Unity/UTBM/LP2B-Final-Project/LP2B Final Project
 D:/Unity/UTBM/LP2B-Final-Project/LP2B Final Project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 37.47 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 39.41 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.5f1 (8095aa901b9b)
 [Subsystems] Discovering subsystems at path C:/Users/julie/Documents/Unity/2020.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -35,131 +35,87 @@ Initialize mono
 Mono path[0] = 'C:/Users/julie/Documents/Unity/2020.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Users/julie/Documents/Unity/2020.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Users/julie/Documents/Unity/2020.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56400
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Users/julie/Documents/Unity/2020.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004411 seconds.
+Registered in 0.001938 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 34.44 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 37.89 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.159 seconds
+- Completed reload, in  1.018 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001378 seconds.
+Registered in 0.001481 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 34.15 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 39.65 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.956 seconds
+- Completed reload, in  0.961 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1812 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 85.0 MB.
-System memory in use after: 84.9 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2254.
-Total: 2.127400 ms (FindLiveObjects: 0.167500 ms CreateObjectMapping: 0.071900 ms MarkObjects: 1.774700 ms  DeleteObjects: 0.112400 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Apple Catcher
-  artifactKey: Guid(8fa6302c72d704b47bad53c29d5ecdcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Apple Catcher using Guid(8fa6302c72d704b47bad53c29d5ecdcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89665339dac9e0702d7c2d16e07f7316') in 0.008193 seconds
-  Import took 0.010855 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.789577 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(64084d5efc9ebbe4f86f5a46861e6c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(64084d5efc9ebbe4f86f5a46861e6c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7824e9e3a56825c81fcbac83d50474b8') in 0.007401 seconds
-  Import took 0.010213 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.789162 seconds.
-  path: Assets/Resources
-  artifactKey: Guid(dd0695eb08e4ab3448b70b891c37dc57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources using Guid(dd0695eb08e4ab3448b70b891c37dc57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ecc97c54d621adeee6f6c9cddaec4a0') in 0.006762 seconds
-  Import took 0.009230 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.133703 seconds.
-  path: Assets/Resources/Apple_prefab.prefab
-  artifactKey: Guid(532857f07a2d87d47ac7144521d5c65d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Apple_prefab.prefab using Guid(532857f07a2d87d47ac7144521d5c65d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac25d601c7d13a78e70c10c1c8ff1633') in 0.140073 seconds
-  Import took 0.143134 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.073068 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5db6c5a27ce610e8eb13047cc6caff06') in 0.008384 seconds
-  Import took 0.011629 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.769981 seconds.
-  path: Assets/Scenes/AppleCatcher.unity
-  artifactKey: Guid(5b70300ad78cc3c469cd7c57d96ce224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/AppleCatcher.unity using Guid(5b70300ad78cc3c469cd7c57d96ce224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '283fa2384de723382a2cbf6a5b10afc5') in 0.007843 seconds
-  Import took 0.011204 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.869094 seconds.
-  path: Assets/Scenes/Title.unity
-  artifactKey: Guid(94614199abfe62844933f87af6987fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Title.unity using Guid(94614199abfe62844933f87af6987fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6c550972637847d21476d4a89bfcdbc') in 0.009515 seconds
-  Import took 0.012305 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002630 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.152 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1854 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.9 MB.
-System memory in use after: 90.3 MB.
-
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2299.
-Total: 2.855100 ms (FindLiveObjects: 0.340400 ms CreateObjectMapping: 0.164400 ms MarkObjects: 1.936800 ms  DeleteObjects: 0.412400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002187 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.960 seconds
-Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1854 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 91.0 MB.
-System memory in use after: 90.3 MB.
+Unloading 1862 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.1 MB.
+System memory in use after: 88.1 MB.
 
-Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2303.
-Total: 2.396500 ms (FindLiveObjects: 0.178400 ms CreateObjectMapping: 0.070500 ms MarkObjects: 1.802800 ms  DeleteObjects: 0.343800 ms)
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2304.
+Total: 1.988400 ms (FindLiveObjects: 0.190000 ms CreateObjectMapping: 0.082400 ms MarkObjects: 1.601100 ms  DeleteObjects: 0.114000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a571f4daf4c3755e334b74ee4dc168a') in 0.011022 seconds
+  Import took 0.014276 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.487186 seconds.
+  path: Assets/Scenes/Brick Breaker.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Brick Breaker.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4dac3b23d0903d21b2e19f5cc49b6fb') in 0.010607 seconds
+  Import took 0.014719 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001361 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.849 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1844 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.8 MB.
+System memory in use after: 86.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2308.
+Total: 2.213900 ms (FindLiveObjects: 0.204300 ms CreateObjectMapping: 0.074800 ms MarkObjects: 1.833700 ms  DeleteObjects: 0.099400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.548060 seconds.
+  path: Assets/Scenes/AppleCatcher Title.unity
+  artifactKey: Guid(94614199abfe62844933f87af6987fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AppleCatcher Title.unity using Guid(94614199abfe62844933f87af6987fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ef1b5fcfdc672fe6462b368fcd9af00') in 0.025029 seconds
+  Import took 0.028662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.841678 seconds.
+  path: Assets/Scenes/BrickBreaker.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/BrickBreaker.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e5661365e82181d222805c70cf8120c') in 0.006752 seconds
+  Import took 0.009443 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
