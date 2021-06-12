@@ -313,6 +313,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1248441416}
   m_maskType: 0
+  _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
 --- !u!23 &1248441416
@@ -404,8 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bf5e3979c965848a828fb6ede54dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  apple_prefab: {fileID: 8265748642164218851, guid: 532857f07a2d87d47ac7144521d5c65d, type: 3}
-  ref_audioClip: {fileID: 8300000, guid: eec2f946b79d0d744bcb1e5a1a1a609f, type: 3}
+  ref_audioClip: {fileID: 0}
   fader_renderer: {fileID: 1348437038}
 --- !u!4 &1312995413
 Transform:
