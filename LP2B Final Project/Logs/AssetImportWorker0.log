@@ -15,11 +15,11 @@ C:/Users/ender/OneDrive - Universite De Technologie De Belfort-Montbeliard/LP2B/
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53274
+56764
 Successfully changed project path to: C:/Users/ender/OneDrive - Universite De Technologie De Belfort-Montbeliard/LP2B/LP2B-Final-Project/LP2B Final Project
 C:/Users/ender/OneDrive - Universite De Technologie De Belfort-Montbeliard/LP2B/LP2B-Final-Project/LP2B Final Project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 51.40 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 59.91 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.5f1 (8095aa901b9b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -35,67 +35,202 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56120
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56936
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004900 seconds.
+Registered in 0.003427 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 55.27 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 52.15 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.706 seconds
+- Completed reload, in  3.304 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002585 seconds.
+Registered in 0.001562 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 50.43 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 50.99 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.213 seconds
+- Completed reload, in  1.218 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 1.55 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1862 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1868 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 88.9 MB.
-System memory in use after: 89.0 MB.
+System memory in use after: 88.9 MB.
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2309.
-Total: 18.137100 ms (FindLiveObjects: 9.134600 ms CreateObjectMapping: 2.018100 ms MarkObjects: 6.907000 ms  DeleteObjects: 0.075200 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2315.
+Total: 2.768500 ms (FindLiveObjects: 0.432700 ms CreateObjectMapping: 0.471400 ms MarkObjects: 1.775900 ms  DeleteObjects: 0.087200 ms)
 
 ========================================================================
 Received Import Request.
+  path: Assets/BrickBreaker
+  artifactKey: Guid(bde434012a82c7e47a098eb05f1420b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrickBreaker using Guid(bde434012a82c7e47a098eb05f1420b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcbaba1779a5cf8aaccb899282ec17c7') in 0.009388 seconds
+  Import took 0.013688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.973660 seconds.
+  path: Assets/BrickBreaker/Scripts
+  artifactKey: Guid(fc4143d44f0613640a15e17e57beb797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrickBreaker/Scripts using Guid(fc4143d44f0613640a15e17e57beb797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d7e1a93bdfbde8d5c5b9618feeee9a') in 0.008756 seconds
+  Import took 0.021081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.363897 seconds.
+  path: Assets/AppleCatcher
+  artifactKey: Guid(821eb09b08ebc8043b0228f9bb683dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AppleCatcher using Guid(821eb09b08ebc8043b0228f9bb683dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb8e42650b30a79e44647e2d080be22') in 0.006293 seconds
+  Import took 0.023872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.796348 seconds.
+  path: Assets/AppleCatcher/Scripts
+  artifactKey: Guid(9c9041d32efbb564b97aae9b6c6c46c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AppleCatcher/Scripts using Guid(9c9041d32efbb564b97aae9b6c6c46c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22586f2163a716840055c174cb8bf071') in 0.009441 seconds
+  Import took 0.012656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.035324 seconds.
+  path: Assets/BrickBreaker/Scripts/GameManager.cs
+  artifactKey: Guid(c6949c5c581179f45a9534b8a72f4dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrickBreaker/Scripts/GameManager.cs using Guid(c6949c5c581179f45a9534b8a72f4dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e829a1bc8d32367e82ff3f55d54ded15') in 0.085283 seconds
+  Import took 0.088836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.961076 seconds.
+  path: Assets/FlappyBird
+  artifactKey: Guid(10f13250e6abc7744be084f355039439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FlappyBird using Guid(10f13250e6abc7744be084f355039439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '545231aafd4efc6b767f621632a86185') in 0.007637 seconds
+  Import took 0.013109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.547846 seconds.
+  path: Assets/FlappyBird/Scripts
+  artifactKey: Guid(f1e6f53182f1df14e91bb0f47113ca28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FlappyBird/Scripts using Guid(f1e6f53182f1df14e91bb0f47113ca28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886df0f992576147c7324058ef0ec06f') in 0.003612 seconds
+  Import took 0.014876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.609944 seconds.
+  path: Assets/FlappyBird/Scripts/GameManager.cs
+  artifactKey: Guid(bbb357490056bea4e830e825fc55432d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FlappyBird/Scripts/GameManager.cs using Guid(bbb357490056bea4e830e825fc55432d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e390ff0bcd568f549a9b284da482020d') in 0.021150 seconds
+  Import took 0.026314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 74.789619 seconds.
+  path: Assets/FlappyBird/Scripts/GameManager.cs
+  artifactKey: Guid(bbb357490056bea4e830e825fc55432d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FlappyBird/Scripts/GameManager.cs using Guid(bbb357490056bea4e830e825fc55432d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '712000a9b505468d01b2b980a410f0a6') in 0.019151 seconds
+  Import took 0.033103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.331484 seconds.
   path: Assets/Scenes
   artifactKey: Guid(64084d5efc9ebbe4f86f5a46861e6c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(64084d5efc9ebbe4f86f5a46861e6c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32f7c4a3ee2513996cb8bc33ec4bcaeb') in 0.007399 seconds
-  Import took 0.013777 seconds .
+Start importing Assets/Scenes using Guid(64084d5efc9ebbe4f86f5a46861e6c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7824e9e3a56825c81fcbac83d50474b8') in 0.003321 seconds
+  Import took 0.029166 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Scenes/AppleCatcher Title.unity
-  artifactKey: Guid(94614199abfe62844933f87af6987fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/AppleCatcher Title.unity using Guid(94614199abfe62844933f87af6987fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '266ecd80d0341523e91f689dd85a0f50') in 0.015807 seconds
-  Import took 0.023996 seconds .
+  Time since last request: 826.382650 seconds.
+  path: Assets/BrickBreaker/Scripts/GameManager.cs
+  artifactKey: Guid(c6949c5c581179f45a9534b8a72f4dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BrickBreaker/Scripts/GameManager.cs using Guid(c6949c5c581179f45a9534b8a72f4dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b0913199424fcfe8319c565b10aa05') in 0.020092 seconds
+  Import took 0.045697 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000095 seconds.
-  path: Assets/Scenes/BrickBreaker.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/BrickBreaker.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '448f36438ee04a773758742ada146674') in 0.016662 seconds
-  Import took 0.020060 seconds .
+  Time since last request: 7.707069 seconds.
+  path: Assets/FlappyBird/Scripts/GameManager.cs
+  artifactKey: Guid(bbb357490056bea4e830e825fc55432d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FlappyBird/Scripts/GameManager.cs using Guid(bbb357490056bea4e830e825fc55432d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e185ea8a064ddb2e80e80964eaf65090') in 0.006044 seconds
+  Import took 0.013001 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000098 seconds.
-  path: Assets/Scenes/AppleCatcher.unity
-  artifactKey: Guid(5b70300ad78cc3c469cd7c57d96ce224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/AppleCatcher.unity using Guid(5b70300ad78cc3c469cd7c57d96ce224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ab2f557efa3ee7dfa123470a8811234') in 0.003518 seconds
-  Import took 0.014944 seconds .
+  Time since last request: 10.091087 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4856052512617ee48189cf1d7999900') in 0.004814 seconds
+  Import took 0.013985 seconds .
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+========================================================================
+Received Import Request.
+  Time since last request: 119.128259 seconds.
+  path: Assets/GameManager.cs
+  artifactKey: Guid(c6949c5c581179f45a9534b8a72f4dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameManager.cs using Guid(c6949c5c581179f45a9534b8a72f4dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2462de1ff422d0f91edef55d604b70e') in 0.019818 seconds
+  Import took 0.028050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.000090 seconds.
+  path: Assets/AppleCatcher/Images
+  artifactKey: Guid(4e7cfe02999f8d54e96a4f43afd89edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AppleCatcher/Images using Guid(4e7cfe02999f8d54e96a4f43afd89edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d9f5956611ae14171e0b91124949060') in 0.016361 seconds
+  Import took 0.024039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.475477 seconds.
+  path: Assets/AppleCatcher/Prefabs
+  artifactKey: Guid(c2613ada78e31d7498417ad610f1965e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AppleCatcher/Prefabs using Guid(c2613ada78e31d7498417ad610f1965e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec81e0265886031bef1f4b52db3ad2e6') in 0.008303 seconds
+  Import took 0.014056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.056463 seconds.
+  path: Assets/AppleCatcher/Prefabs/Apple_prefab.prefab
+  artifactKey: Guid(532857f07a2d87d47ac7144521d5c65d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AppleCatcher/Prefabs/Apple_prefab.prefab using Guid(532857f07a2d87d47ac7144521d5c65d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e318ff2a2013051804512daeccd2b2') in 0.115323 seconds
+  Import took 0.122857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 195.682186 seconds.
+  path: Assets/GameManager.cs
+  artifactKey: Guid(c6949c5c581179f45a9534b8a72f4dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameManager.cs using Guid(c6949c5c581179f45a9534b8a72f4dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c170b6fba642cf4eaa978bff1628c02') in 0.008815 seconds
+  Import took 0.018000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1032.273989 seconds.
+  path: Assets/GameManager.cs
+  artifactKey: Guid(c6949c5c581179f45a9534b8a72f4dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameManager.cs using Guid(c6949c5c581179f45a9534b8a72f4dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeaeac0736b55e5ac46c762c61a50827') in 0.009501 seconds
+  Import took 0.027719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.738854 seconds.
+  path: Assets/GameManager.cs
+  artifactKey: Guid(c6949c5c581179f45a9534b8a72f4dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameManager.cs using Guid(c6949c5c581179f45a9534b8a72f4dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16399190dd5009c73728125aed17bb89') in 0.020135 seconds
+  Import took 0.048755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.896771 seconds.
+  path: Assets/GameManager.cs
+  artifactKey: Guid(c6949c5c581179f45a9534b8a72f4dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GameManager.cs using Guid(c6949c5c581179f45a9534b8a72f4dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94c4b540810350bbc7694b0001689ef1') in 0.010815 seconds
+  Import took 0.078060 seconds .
+
