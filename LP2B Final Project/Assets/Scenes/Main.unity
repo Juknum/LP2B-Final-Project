@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 30250366}
   - component: {fileID: 30250365}
   - component: {fileID: 30250368}
+  - component: {fileID: 30250369}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -206,7 +207,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 30250366}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 30250363}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &30250366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,6 +277,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &30250369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30250363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 089dc75ccec06bb4c840345853ea9515, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btn: {fileID: 30250365}
 --- !u!1 &191735584
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,6 +617,7 @@ GameObject:
   - component: {fileID: 1065418910}
   - component: {fileID: 1065418909}
   - component: {fileID: 1065418912}
+  - component: {fileID: 1065418913}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -719,6 +746,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1065418913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065418907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d129601b3ac1c343a12a61e9bc7081d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btn: {fileID: 1065418909}
 --- !u!1 &1152925195
 GameObject:
   m_ObjectHideFlags: 0
@@ -1070,7 +1110,7 @@ MonoBehaviour:
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1112,6 +1152,7 @@ GameObject:
   - component: {fileID: 1743767705}
   - component: {fileID: 1743767704}
   - component: {fileID: 1743767707}
+  - component: {fileID: 1743767708}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -1182,7 +1223,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1743767705}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1743767702}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1743767705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1240,6 +1293,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1743767708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743767702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f03bc464a3c1a41be8a8735dfa388e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btn: {fileID: 1743767704}
 --- !u!1 &1817985586
 GameObject:
   m_ObjectHideFlags: 0
