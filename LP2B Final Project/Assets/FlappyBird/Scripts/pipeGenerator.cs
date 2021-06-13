@@ -8,7 +8,7 @@ public class pipeGenerator : MonoBehaviour
     [SerializeField] GameObject pipes;
     int timer = 500;
 
-    public playerController pc;
+    public playerController playerController;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class pipeGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        while(pc.dead == false){
+        while(playerController.dead == false){
         timer++;
             if(timer >= 500){
                 timer = 0;
