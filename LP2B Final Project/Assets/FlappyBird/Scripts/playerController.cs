@@ -10,11 +10,15 @@ public class playerController : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     Rigidbody2D bird;
     int score = 0;
-    bool dead = false;
+    public bool dead = false;
+
+    AudioSource audio;
+
     // Start is called before the first frame update
     void Start()
     {
         bird = transform.GetComponent<Rigidbody2D>();
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -25,10 +29,11 @@ public class playerController : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(){
+    void OnCollisionEnter2D(Collision2D col){
         dead = true;
-        score = 0;
-        scoreText.text = "Score : 0";
+        if(col.gameObject.CompareTag("pipe")){
+            audio.Play();
+        }
     }
 
     void OnTriggerExit2D(Collider2D col){
@@ -37,4 +42,5 @@ public class playerController : MonoBehaviour
             scoreText.text = "Score : " + score.ToString();
         }
     }
+
 }
