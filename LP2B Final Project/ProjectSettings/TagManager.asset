@@ -9,6 +9,7 @@ TagManager:
   - walls
   - paddle
   - bottom
+  - pointTrigger
   layers:
   - Default
   - TransparentFX
