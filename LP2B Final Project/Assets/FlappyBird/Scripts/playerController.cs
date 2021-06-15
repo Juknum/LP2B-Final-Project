@@ -37,16 +37,16 @@ public class playerController : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D col) {
-		// dead = true;
+		dead = true;
 
-		// if (col.gameObject.CompareTag("pipe")) {
-		// 	spriteRenderer.sprite = dead_sprite;
-		// 	audio.Play();
-		// 	gameInfoPanel.SetActive(false);
-		// 	gameOverPanel.SetActive(true);
+		if (col.gameObject.CompareTag("pipe")) {
+			spriteRenderer.sprite = dead_sprite;
+			audio.Play();
+			gameInfoPanel.SetActive(false);
+			gameOverPanel.SetActive(true);
 
-    //   Invoke("goToMain", 2);
-		// }
+      Invoke("goToMain", 2);
+		}
 	}
 
 	private void goToMain() {

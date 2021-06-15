@@ -21,8 +21,8 @@ public class pipeGenerator : MonoBehaviour {
     if (state == true) return;
 		
 		timer++;
-		if(timer >= 50){
-      timer = Random.Range(0, 40);
+		if(timer >= 100){
+      timer = Random.Range(0, 80);
 
 			int pipeType = Random.Range(0, 3);
 			GameObject pipe;
