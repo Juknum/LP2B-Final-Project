@@ -334,6 +334,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipes: {fileID: 5164693562432133037, guid: f3019c1739a35a94f85235ebcdcbd45d, type: 3}
+  pipes1: {fileID: 5164693562432133037, guid: 429f587b96bd45d4e9592ac9d2923c0f, type: 3}
+  pipes2: {fileID: 5164693562432133037, guid: 07257aedeff1bc248956716bdad00051, type: 3}
+  pipes3: {fileID: 5164693562432133037, guid: 7b62b5c5320657a4592297c8b3f90c3d, type: 3}
+  bird: {fileID: 1238394191}
 --- !u!4 &464841696
 Transform:
   m_ObjectHideFlags: 0
@@ -619,15 +623,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Score : 0'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 74eca196da471e248a7920a568ce3d40, type: 2}
+  m_sharedMaterial: {fileID: -3152566893997661160, guid: 74eca196da471e248a7920a568ce3d40, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4285678127
+  m_fontColor: {r: 0.18431373, g: 0.25882354, b: 0.44705883, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -644,8 +648,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -862,10 +866,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1238394192}
   - component: {fileID: 1238394195}
-  - component: {fileID: 1238394194}
   - component: {fileID: 1238394193}
   - component: {fileID: 1238394196}
   - component: {fileID: 1238394197}
+  - component: {fileID: 1238394194}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -881,7 +885,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238394191}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.32, y: -0.31, z: 0.20832966}
+  m_LocalPosition: {x: -15.295, y: -0.328, z: 0.20832966}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 68328525}
@@ -908,8 +912,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!58 &1238394194
-CircleCollider2D:
+--- !u!60 &1238394194
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -921,9 +925,56 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.028987944, y: -0.028673649}
-  serializedVersion: 2
-  m_Radius: 0.5212479
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.06909847, y: -0.5890381}
+      - {x: -0.06409788, y: -0.62642866}
+      - {x: -0.16499962, y: -0.6091183}
+      - {x: -0.20930624, y: -0.5312554}
+      - {x: -0.18121576, y: -0.45922366}
+      - {x: -0.26844263, y: -0.38552597}
+      - {x: -0.26440716, y: -0.30910155}
+      - {x: -0.23181725, y: -0.28304046}
+      - {x: -0.2394867, y: -0.2089994}
+      - {x: -0.40309095, y: -0.29099783}
+      - {x: -0.527648, y: -0.28363562}
+      - {x: -0.56008863, y: -0.21789815}
+      - {x: -0.5096526, y: -0.1227703}
+      - {x: -0.4103222, y: -0.0078053325}
+      - {x: -0.5422015, y: 0.14917997}
+      - {x: -0.5459461, y: 0.23235148}
+      - {x: -0.4985242, y: 0.2622488}
+      - {x: -0.36583853, y: 0.2303327}
+      - {x: -0.214962, y: 0.14540431}
+      - {x: -0.22074366, y: 0.23653102}
+      - {x: -0.26396227, y: 0.30841503}
+      - {x: -0.24644327, y: 0.37097478}
+      - {x: -0.20003462, y: 0.41186148}
+      - {x: -0.23135567, y: 0.4941877}
+      - {x: -0.22710323, y: 0.5544863}
+      - {x: -0.13192034, y: 0.58851373}
+      - {x: 0.020350933, y: 0.56983453}
+      - {x: 0.16494322, y: 0.49097645}
+      - {x: 0.2527423, y: 0.40116847}
+      - {x: 0.27658224, y: 0.32185674}
+      - {x: 0.34572315, y: 0.25453994}
+      - {x: 0.3741145, y: 0.15354848}
+      - {x: 0.5557623, y: 0.039526284}
+      - {x: 0.6013589, y: -0.032535836}
+      - {x: 0.5507393, y: -0.07200473}
+      - {x: 0.5547538, y: -0.115258574}
+      - {x: 0.26362324, y: -0.27792272}
+      - {x: 0.24087864, y: -0.447357}
 --- !u!212 &1238394195
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1148,17 +1199,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You lost ! '
+  m_text: You Failed!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 74eca196da471e248a7920a568ce3d40, type: 2}
+  m_sharedMaterial: {fileID: -3152566893997661160, guid: 74eca196da471e248a7920a568ce3d40, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4285678127
+  m_fontColor: {r: 0.18431373, g: 0.25882354, b: 0.44705883, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1665,8 +1716,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d87493743ab6fa438d8eb42dd9f0ce4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
-  scoreText: {fileID: 0}
+  bird: {fileID: 1238394191}
+  scoreText: {fileID: 1977327153}
 --- !u!114 &1977327153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1689,15 +1740,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Score : '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 74eca196da471e248a7920a568ce3d40, type: 2}
+  m_sharedMaterial: {fileID: -3152566893997661160, guid: 74eca196da471e248a7920a568ce3d40, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4285612590
+  m_fontColor: {r: 0.18195978, g: 0.25709143, b: 0.4433962, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

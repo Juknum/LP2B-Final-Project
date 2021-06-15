@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class pipeMouvement : MonoBehaviour {
 
+	private float speedPipe = 8.5f;
   private GameObject bird;
 	private bool state;
 
@@ -16,7 +17,7 @@ public class pipeMouvement : MonoBehaviour {
 	void Update() {
     state = bird.GetComponent<playerController>().dead;
 		if (state == true) return;
-		
-		transform.position = Vector2.Lerp(transform.position, new Vector2(transform.position.x-0.35f, transform.position.y), 0.08f);
+
+		transform.Translate(Vector2.left * Time.deltaTime * speedPipe);
 	}
 }

@@ -26,13 +26,7 @@ public class playerController : MonoBehaviour {
 		bird = transform.GetComponent<Rigidbody2D>();
 		audio = GetComponent<AudioSource>();
 		spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-
-		// StartCoroutine(Coroutine());
 	}
-
-	// IEnumerator Coroutine() {
-	// 	yield return new WaitForSeconds(2);
-	// }
 
 	// Update is called once per frame
 	void Update() {
@@ -43,16 +37,16 @@ public class playerController : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D col) {
-		this.dead = true;
+		// dead = true;
 
-		if (col.gameObject.CompareTag("pipe")) {
-			spriteRenderer.sprite = dead_sprite;
-			audio.Play();
-			gameInfoPanel.SetActive(false);
-			gameOverPanel.SetActive(true);
+		// if (col.gameObject.CompareTag("pipe")) {
+		// 	spriteRenderer.sprite = dead_sprite;
+		// 	audio.Play();
+		// 	gameInfoPanel.SetActive(false);
+		// 	gameOverPanel.SetActive(true);
 
-      Invoke("goToMain", 2);
-		}
+    //   Invoke("goToMain", 2);
+		// }
 	}
 
 	private void goToMain() {

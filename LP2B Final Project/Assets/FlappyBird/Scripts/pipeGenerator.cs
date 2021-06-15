@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class pipeGenerator : MonoBehaviour {
 
-	[SerializeField] GameObject pipes;
+  [SerializeField] GameObject pipes;
+	[SerializeField] GameObject pipes1;
+	[SerializeField] GameObject pipes2;
+	[SerializeField] GameObject pipes3;
 	public GameObject bird;
 	int timer = 500;
 	private bool state;
@@ -16,11 +19,31 @@ public class pipeGenerator : MonoBehaviour {
 	void Update() {
     state = bird.GetComponent<playerController>().dead;
     if (state == true) return;
-
+		
 		timer++;
-		if(timer >= 500){
-			timer = 0;
-			GameObject pipe = Instantiate(pipes, new Vector2(pipes.transform.position.x, pipes.transform.position.y + Random.Range(-2, 2)), pipes.transform.rotation);
+		if(timer >= 50){
+      timer = Random.Range(0, 40);
+
+			int pipeType = Random.Range(0, 3);
+			GameObject pipe;
+			switch (pipeType) {
+				case 0:
+					pipe = Instantiate(pipes, new Vector2(pipes.transform.position.x, pipes.transform.position.y + Random.Range(-2, 2)), pipes.transform.rotation);
+					break;
+				case 1:
+					pipe = Instantiate(pipes1, new Vector2(pipes1.transform.position.x, pipes.transform.position.y + Random.Range(-2, 2)), pipes.transform.rotation);
+					break;
+				case 2:
+					pipe = Instantiate(pipes2, new Vector2(pipes2.transform.position.x, pipes.transform.position.y + Random.Range(-2, 2)), pipes.transform.rotation);
+					break;
+				case 3:
+					pipe = Instantiate(pipes3, new Vector2(pipes3.transform.position.x, pipes.transform.position.y + Random.Range(-2, 2)), pipes.transform.rotation);
+					break;
+				default:
+          pipe = Instantiate(pipes, new Vector2(pipes.transform.position.x, pipes.transform.position.y + Random.Range(-2, 2)), pipes.transform.rotation);
+					break;
+			}
+			
 			Destroy(pipe, 7);
 		}
 	}

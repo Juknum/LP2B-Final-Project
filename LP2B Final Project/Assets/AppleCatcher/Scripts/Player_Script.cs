@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Player_Script : MonoBehaviour
 {
@@ -60,11 +61,10 @@ public class Player_Script : MonoBehaviour
             Time.timeScale = 1.0f;
         }
 
-        //Quit game
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
+        // Back to Menu
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+			SceneManager.LoadScene("Main");
+		}
     }
 
     //React to a collision (collision start)
