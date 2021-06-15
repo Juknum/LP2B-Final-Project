@@ -9,7 +9,7 @@ public class playerController : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI scoreText;
     Rigidbody2D bird;
-    int score = 0;
+    public int score = 0;
     public bool dead = false;
 
     AudioSource audio;
@@ -33,6 +33,7 @@ public class playerController : MonoBehaviour
         dead = true;
         if(col.gameObject.CompareTag("pipe")){
             audio.Play();
+            SceneManager.LoadScene("FlappyBirdCrash");
         }
     }
 
