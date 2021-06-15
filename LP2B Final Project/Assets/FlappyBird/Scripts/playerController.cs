@@ -57,7 +57,6 @@ public class playerController : MonoBehaviour
     }
 
     private void sprite_alternate(){
-        if(!dead){
             if(count == 0){
                 spriteRenderer.sprite = second_Sprite; 
                 count = 1;
@@ -65,6 +64,5 @@ public class playerController : MonoBehaviour
                 spriteRenderer.sprite = first_Sprite;
                 count = 0 ;
             }
-        }
     }
 }
