@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Threading;
 
 public class playerController : MonoBehaviour
 {
@@ -14,11 +15,19 @@ public class playerController : MonoBehaviour
 
     AudioSource audio;
 
+    private SpriteRenderer spriteRenderer;
+    private int count = 0;
+    public Sprite first_Sprite;
+    public Sprite second_Sprite;
+    public Sprite dead_sprite;
+
     // Start is called before the first frame update
     void Start()
     {
         bird = transform.GetComponent<Rigidbody2D>();
         audio = GetComponent<AudioSource>();
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+
     }
 
     // Update is called once per frame
@@ -26,13 +35,16 @@ public class playerController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.UpArrow) && !dead){
             bird.velocity = new Vector2(0, 8.5f);
+            sprite_alternate();
         }
     }
 
     void OnCollisionEnter2D(Collision2D col){
         dead = true;
         if(col.gameObject.CompareTag("pipe")){
+            spriteRenderer.sprite = dead_sprite;
             audio.Play();
+            Thread.Sleep(1000);
             SceneManager.LoadScene("FlappyBirdCrash");
         }
     }
@@ -44,4 +56,15 @@ public class playerController : MonoBehaviour
         }
     }
 
+    private void sprite_alternate(){
+        if(!dead){
+            if(count == 0){
+                spriteRenderer.sprite = second_Sprite; 
+                count = 1;
+            }else{
+                spriteRenderer.sprite = first_Sprite;
+                count = 0 ;
+            }
+        }
+    }
 }

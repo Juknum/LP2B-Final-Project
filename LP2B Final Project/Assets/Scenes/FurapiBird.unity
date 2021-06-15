@@ -266,7 +266,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipes: {fileID: 5164693562432133037, guid: f3019c1739a35a94f85235ebcdcbd45d, type: 3}
-  playerController: {fileID: 1238394196}
 --- !u!4 &464841696
 Transform:
   m_ObjectHideFlags: 0
@@ -739,7 +738,7 @@ GameObject:
   - component: {fileID: 1219801100}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: pipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -920,7 +919,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1000429339}
+  score: 0
   dead: 0
+  first_Sprite: {fileID: 21300000, guid: d9034032646e4df4380093b8026eea17, type: 3}
+  second_Sprite: {fileID: 21300000, guid: acc1d014a81f3e74a823efa8edf281be, type: 3}
+  dead_sprite: {fileID: 21300000, guid: 22dbcfeb832f14345812b17d1ba48490, type: 3}
 --- !u!82 &1238394197
 AudioSource:
   m_ObjectHideFlags: 0
@@ -933,7 +936,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fd1cb69a7eab4b44486df0dc1926cbc0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.316
   m_Pitch: 1
   Loop: 0
   Mute: 0
