@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class exitGame : MonoBehaviour
-{
+public class exitGame : MonoBehaviour {
 
-    // Start is called before the first frame update
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Escape)){
-            SceneManager.LoadScene("Main");
-        }
-    }
+	// Start is called before the first frame update
+	void Update() {
+		if (Input.GetKeyDown(KeyCode.Escape)) {
+			SceneManager.LoadScene("Main");
+		}
+	}
 }

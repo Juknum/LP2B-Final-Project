@@ -1919,7 +1919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 26, y: -109.18}
+  m_AnchoredPosition: {x: 26, y: -109.17999}
   m_SizeDelta: {x: 1089.41, y: 146.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &869707181
@@ -2210,7 +2210,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PRESS SPACE TO RESTART
+  m_Text: PRESS ENTER TO RESTART
 --- !u!222 &1356496320
 CanvasRenderer:
   m_ObjectHideFlags: 0

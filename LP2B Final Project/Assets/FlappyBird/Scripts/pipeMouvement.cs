@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pipeMouvement : MonoBehaviour
-{
+public class pipeMouvement : MonoBehaviour {
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+  private GameObject bird;
+	private bool state;
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.position = Vector2.Lerp(transform.position, new Vector2(transform.position.x-0.35f, transform.position.y), 0.08f);
-    }
+	// Start is called before the first frame update
+	void Start() {
+		bird = GameObject.Find("Bird");
+	}
+
+	// Update is called once per frame
+	void Update() {
+    state = bird.GetComponent<playerController>().dead;
+		if (state == true) return;
+		
+		transform.position = Vector2.Lerp(transform.position, new Vector2(transform.position.x-0.35f, transform.position.y), 0.08f);
+	}
 }
