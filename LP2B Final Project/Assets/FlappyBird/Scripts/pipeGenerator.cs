@@ -18,7 +18,7 @@ public class pipeGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        while(playerController.dead == false){
+        if(playerController.dead == false){
         timer++;
             if(timer >= 500){
                 timer = 0;

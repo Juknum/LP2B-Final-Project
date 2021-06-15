@@ -15,11 +15,11 @@ C:/Users/Noé/OneDrive - Universite De Technologie De Belfort-Montbeliard/LP2B/L
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60529
+63435
 Successfully changed project path to: C:/Users/Noé/OneDrive - Universite De Technologie De Belfort-Montbeliard/LP2B/LP2B-Final-Project/LP2B Final Project
 C:/Users/Noé/OneDrive - Universite De Technologie De Belfort-Montbeliard/LP2B/LP2B-Final-Project/LP2B Final Project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 126.16 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 137.19 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.6f1 (338bb68529b2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
@@ -35,66 +35,86 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56856
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56348
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009521 seconds.
+Registered in 0.009525 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 125.35 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 70.80 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  6.343 seconds
+- Completed reload, in  6.457 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005374 seconds.
+Registered in 0.005407 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 128.92 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 75.56 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.451 seconds
+- Completed reload, in  4.405 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
-Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.97 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1872 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 89.3 MB.
 System memory in use after: 89.4 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2323.
-Total: 5.753000 ms (FindLiveObjects: 0.804600 ms CreateObjectMapping: 0.327100 ms MarkObjects: 4.455600 ms  DeleteObjects: 0.162400 ms)
+Total: 16.560700 ms (FindLiveObjects: 1.176400 ms CreateObjectMapping: 0.340500 ms MarkObjects: 14.591700 ms  DeleteObjects: 0.446700 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Sounds
-  artifactKey: Guid(f623f07894308d54cb52b1b273a10f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds using Guid(f623f07894308d54cb52b1b273a10f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2fec55410d0b3f9266c352c96aba9a1') in 0.027642 seconds
-  Import took 0.046964 seconds .
+  path: Assets/FlappyBird/Scripts/pipeGenerator.cs
+  artifactKey: Guid(d069f2269fb32b24085320eed037a0ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FlappyBird/Scripts/pipeGenerator.cs using Guid(d069f2269fb32b24085320eed037a0ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98b7748a80d4c07721dc2118f90a5b99') in 0.080048 seconds
+  Import took 0.126823 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.142944 seconds.
-  path: Assets/urapiBird
-  artifactKey: Guid(fd058a9633ca7c2409a6d649e9dcaf2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/urapiBird using Guid(fd058a9633ca7c2409a6d649e9dcaf2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '081c8ebbf7fab9a0a53e95cdc5f90ab6') in 0.019855 seconds
-  Import took 0.056951 seconds .
+  Time since last request: 0.001821 seconds.
+  path: Assets/FlappyBird/Scripts/playerController.cs
+  artifactKey: Guid(36f2e5b6ddfefa7429ec7ac740a7b8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FlappyBird/Scripts/playerController.cs using Guid(36f2e5b6ddfefa7429ec7ac740a7b8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95213abfab194273e99f1110ef0a2d6a') in 0.052106 seconds
+  Import took 0.078856 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002192 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.157 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.99 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1849 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.5 MB.
+System memory in use after: 87.6 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2327.
+Total: 4.994000 ms (FindLiveObjects: 0.516700 ms CreateObjectMapping: 0.167000 ms MarkObjects: 4.253300 ms  DeleteObjects: 0.053400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.476695 seconds.
-  path: Assets/Apple Catcher
-  artifactKey: Guid(0df54acba7d17004a856f320f78933e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Apple Catcher using Guid(0df54acba7d17004a856f320f78933e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a21dce2e84d36faa5ffbac99381de5d') in 0.072453 seconds
-  Import took 0.093540 seconds .
+  Time since last request: 37.417980 seconds.
+  path: Assets/FlappyBird/Scripts/pipeMouvement.cs
+  artifactKey: Guid(a72912e29eccf204188747bfd6a0685f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FlappyBird/Scripts/pipeMouvement.cs using Guid(a72912e29eccf204188747bfd6a0685f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010737755118acba7b3cd382bad53da9') in 0.021202 seconds
+  Import took 0.037896 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.248929 seconds.
-  path: Assets/FurapiBird
-  artifactKey: Guid(90d03770dc24c394788fea4ce94b6e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FurapiBird using Guid(90d03770dc24c394788fea4ce94b6e36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c443a9a372ee34124bdff01f5777412') in 0.012596 seconds
-  Import took 0.039739 seconds .
+  Time since last request: 0.000457 seconds.
+  path: Assets/FlappyBird/Scripts/pipeGenerator.cs
+  artifactKey: Guid(d069f2269fb32b24085320eed037a0ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FlappyBird/Scripts/pipeGenerator.cs using Guid(d069f2269fb32b24085320eed037a0ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22474eec525949cbd8763eef7265010d') in 0.011281 seconds
+  Import took 0.026424 seconds .
 
