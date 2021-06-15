@@ -1,25 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
-public class SoundWall : MonoBehaviour
+public class endGameScore : MonoBehaviour
 {
-    AudioSource audio;
 
+    public playerController playerController;
+    TextMeshProUGUI scoreText;
     // Start is called before the first frame update
     void Start()
     {
-        audio = GetComponent<AudioSource>();
+        scoreText.text = "Score : " + playerController.score;
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-    void OnCollisionEnter2D(Collision2D col){
-        if(col.transform.CompareTag("ball")){
-            audio.Play();
-        }
     }
 }

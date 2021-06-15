@@ -2,58 +2,65 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using TMPro;
 
-public class GameManager : MonoBehaviour
-{
-    public int scoreValue;
-    public Text score;
-    public bool gameOver;
-    public GameObject gameOverPanel;
-    public int bricksLeft;
+public class GameManager : MonoBehaviour {
+  public int score;
+  public Text scoreText;
+  public int numberOfBricks;
+  public bool gameOver;
+  public GameObject gameOverPanel;
+  public Transform[] levels;
+  public int currentLevelIndex = 0;
+  public GameObject ball;
 
+  // Start is called before the first frame update
+  void Start() {
+    scoreText.text = "Score: " + score;
+    numberOfBricks = GameObject.FindGameObjectsWithTag("Brick").Length;
+  }
 
-    // Start is called before the first frame update
-    void Start()
-    {   
-        score.text = "Score : " + scoreValue;
-
-        bricksLeft = GameObject.FindGameObjectsWithTag("brick").Length;
-        
+  // Update is called once per frame
+  void Update() {
+    // if the game is over, press enter to "restart" the game
+    if (Input.GetKey(KeyCode.Return) && gameOver) {
+      gameOver = false;
+      gameOverPanel.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    // Load next level when there is no bricks anymore
+    if (numberOfBricks == 0) LoadNextLevel();
 
-    }
+  }
 
-    public void scoreUpdate(int points){
-        scoreValue += points;
+  void LoadNextLevel() {
+    // Custom Vector because I messed up when saving prefabs
+    Instantiate(levels[currentLevelIndex % levels.Length], Vector2.zero, Quaternion.identity);
+    currentLevelIndex++;
 
-        score.text = "Score : " + scoreValue;
-    }
+    numberOfBricks = GameObject.FindGameObjectsWithTag("Brick").Length;
+    ball.GetComponent<Ball>().SetInPlay(false);
+  }
 
-    public void UpdateBricksLeft(){
-        bricksLeft--;
-        if(bricksLeft <= 0){
-            GameOver();
-        }
-    }
+  // public function to update the score from anywhere it's called
+  public void UpdateScore(int changeInScore) {
+    score = score + changeInScore > 0 ? score + changeInScore : 0; // avoid -30129313 of score
+    scoreText.text = "Score: " + score;
 
-    public void GameOver(){
-        gameOver = true;
-        gameOverPanel.SetActive(true);
-    }
+    if (score == 0) GameOver();
+  }
 
-    public void PlayAgain(){
-            SceneManager.LoadScene("BrickBreaker");
-    }
+  public int GetScore() {
+    return score;
+  }
 
-    public void LeaveGame(){
-        Application.Quit();
-        Debug.Log("Game quit !");
-    }
+  // Use to be the "ReportBrickDeath()"
+  // decrease the number of bricks by the given value (can't go below 0)
+  public void UpdateBricksCount(int changeInBricks) {
+    numberOfBricks = numberOfBricks + changeInBricks > 0 ? numberOfBricks + changeInBricks : 0;
+  }
 
+  void GameOver() {
+    gameOver = true;
+    gameOverPanel.SetActive(true);
+  }
 }
